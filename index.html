@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTTN website</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- mobile menu -->
@@ -15,9 +18,9 @@
             <a class="menu-close" href="#"></a>
             <ul>
                 <li class="logo">MNTN</li>
-                <li><a href="#">Equipment</a></li>
-                <li><a href="#">About us</a></li>		
-                <li><a href="#">Blog</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#about">About us</a></li>		
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
         
@@ -45,13 +48,13 @@
                 <header class="header">
                         <div class="header__inner">
                             <div class="header__logo logo">
-                                MNTN
+                                <a href="#">MNTN</a>
                             </div>
                             <nav class="header__menu">
                                 <ul>
-                                    <li><a href="#">Equipment</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#equipment">Equipment</a></li>
+                                    <li><a href="#about">About us</a></li>		
+                                    <li><a href="#blog">Blog</a></li>
                                 </ul>
                             </nav>
                             <div class="header__personal">
@@ -69,10 +72,10 @@
                             </div>
                             <div class="mainscreen__scale">
                                 <ul>
-                                    <li>Start</li>
-                                    <li>01</li>
-                                    <li>02</li>
-                                    <li>03</li>
+                                    <li><a href="#start">Start</a></li>
+                                    <li><a href="#equipment">01</a></li>
+                                    <li><a href="#about">02</a></li>
+                                    <li><a href="#blog">03</a></li>
                                 </ul>
                                 <div class="mainscreen__scale-line"></div>
                             </div>
@@ -84,7 +87,7 @@
     <section id="levels">
         <div class="container">
             <div class="levels__inner">
-                <div class="levels__first level">
+                <div class="levels__first level scale" id="equipment">
                     <div class="levels__content">
                         <div class="tagline">
                             <div class="tagline__line"></div>
@@ -98,7 +101,7 @@
                         <img src="img/level-first.jpg" alt="First level">
                     </div>
                 </div>
-                <div class="levels__second level">
+                <div class="levels__second level scale" id="about">
                     <div class="levels__content">
                         <div class="tagline">
                             <div class="tagline__line"></div>
@@ -112,7 +115,7 @@
                         <img src="img/level-second.jpg" alt="Second level">
                     </div>
                 </div>
-                <div class="levels__third level">
+                <div class="levels__third level scale" id="blog">
                     <div class="levels__content">
                         <div class="tagline">
                             <div class="tagline__line"></div>
@@ -135,7 +138,7 @@
                 <div class="footer__copyright">
                     <div class="footer__slogan">
                         <div class="footer__logo logo">
-                            MNTN
+                            <a href="#">MNTN</a>
                         </div>
                         <div class="footer__moto">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a ipsum!
