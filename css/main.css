@@ -275,6 +275,9 @@ h2 {
     justify-content: space-between;
     gap: 40px;
 }
+.header__menu ul li a {
+    transition: all 0.4s;
+}
 .header__menu ul li a.active {
     color: var(--accent);
 }
@@ -467,7 +470,6 @@ h2 {
 footer {
     position: relative;
     z-index: 50;
-    background: #0b1d26;
 }
 .footer__inner {
     display: -webkit-flex;
@@ -477,6 +479,7 @@ footer {
     padding-left: 230px;
     padding-right: 370px;
     padding-bottom: 100px;
+    background: #0b1d26;
 }
 .footer__copyright {
     max-width: 400px;
@@ -526,12 +529,27 @@ footer {
 .footer__copyright--info {
     opacity: 0.3;
 }
-.footer__menu--blog {
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: url(../img/btntop.png);
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    opacity: .3;
+    transition: ease 0.5s;
 }
-.footer__menu--more {
+#toTop:hover {
+    opacity: 1;
 }
-/* media */
 
+
+/* media */
 @container blog (max-width: 1700px) {
     .levels__inner {
         display: -webkit-flex;
