@@ -352,9 +352,7 @@ h2 {
 }
 .mainscreen__scale ul>li a {
     position: relative;
-}
-.mainscreen__scale ul>li a.active {
-    color: var(--accent);
+    opacity: .5;
 }
 .mainscreen__scale ul>li a::after {
     content: "";
@@ -367,6 +365,11 @@ h2 {
     right: -70px;
     top: 24px;
     opacity: .3;
+    transition: all 0.4s;
+}
+.mainscreen__scale ul>li a.active {
+    color: var(--accent);
+    opacity: 1;
 }
 .mainscreen__scale ul>li a.active::after {
     background-color: var(--accent);
